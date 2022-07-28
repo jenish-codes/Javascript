@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <!-- creating array -->
+<p id="demo"></p>
+<script>
+    let cars = ["bmw","volvo","honda"];
+    document.getElementById("demo").innerHTML = cars;
+
+
+
+// accesing array element 
+
+let bmw = cars[0];
+console.log(bmw);
+
+// lenght of array
+
+console.log(cars.length);
+
+// accessing last array item 
+
+console.log(cars[cars.length-1]);
+
+// loop over an array item 
+
+cars.forEach((item,index,array)=> {console.log(item,index);});
+
+
+
+
+
+
+
+
+
+
+// ARRAY METHODS 
+
+
+// convert toString 
+
+console.log(cars.toString());
+
+// remove last element 
+
+console.log(cars.pop());
+console.log(cars[cars.length-1]);
+console.log(cars);
+
+// add element end of an array 
+
+cars.push("audi");
+console.log(cars);
+
+
+// remove first element from the array 
+
+
+cars.shift();
+console.log(cars);
+
+
+// add en element in the begining
+
+
+cars.unshift("auto");
+console.log(cars);
+
+// merge two arrays
+
+let bike = ["bike","cycle","honda"]
+let vehicle = cars.concat(bike);
+console.log(vehicle);
+
+// arrange an array in accending aorder
+
+console.log(vehicle.sort());
+
+// arrange an array in decending order
+
+console.log(vehicle.reverse())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
